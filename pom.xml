@@ -31,12 +31,6 @@
     This bundle provides content that is loaded in the JCR repository for the liveSense portal
   </description>
 
-  <scm>
-    <connection>scm:svn:http://svn.apache.org/repos/asf/sling/trunk/launchpad/content</connection>
-    <developerConnection>scm:svn:https://svn.apache.org/repos/asf/sling/trunk/launchpad/content</developerConnection>
-    <url>http://svn.apache.org/viewvc/sling/trunk/launchpad/content</url>
-  </scm>
-
   <build>
     <plugins>
       <plugin>
@@ -60,7 +54,7 @@
                 <configuration>
                   <!-- No javadocs -->
                     <excludePackageNames>
-                        org.apache.sling
+                        org.liveSense
                     </excludePackageNames>
                 </configuration>
             </plugin>
