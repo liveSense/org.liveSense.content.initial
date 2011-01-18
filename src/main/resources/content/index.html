@@ -45,11 +45,14 @@
     <div class="main">
         <h1>Welcome to the liveSense portal</h1>
         
+        <h2>What is liveSense?</h2>
+		<p>liveSense is a Java based portal engine utilizes the most recent Java portal technologies, like Apache Sling, Google Widget Tookit and the amazing OSGi modell. liveSense is a glue, because Sling is a portal API that doesn't contain toolsets that need to build complete portals easy. The goal of liveSense, every developer able to develop web application easy without to spend a lot of time to integrate these technologies. liveSense is a JCR 2.0 compliant CMS (based on Apache Sling and Apache Jackrabbit)
+        </p>
         <p>
             <a href="http://code.google.com/p/livesense">liveSense</a> is a web framework that uses <a href="http://sling.apache.org">Apache Sling</a>, a Java Content Repository, 
             such as <a href="http://jackrabbit.apache.org">Apache Jackrabbit</a>, to store and manage content.
 
-			liveSense portal is an extended version of Apache Sling, adding some portal functions, as 	registration framework, email framework, activation framework, thumbnail, captcha.
+			liveSense portal is an extended version of Apache Sling, adding some portal functions, as registration framework, email framework, activation framework, thumbnail, captcha.
 
             Sling applications use either scripts or Java servlets, selected based on simple name conventions, 
             to process HTTP requests in a RESTful way.
@@ -65,28 +68,18 @@
         </p>
         
         <h2>Getting started</h2>
-        <p>
-            To get started with liveSense portal, see our
-            <a href="http://code.google.com/p/livesense">website</a> and
-            the 
-            <a href="http://sling.apache.org/site/discover-sling-in-15-minutes.html">
-            Sling in 15 minutes
-            </a>
-            tutorial.
-        </p>
+        
         <p>
             If you have the "Sling Explorer" bundle installed, 
             you can <a href=".explorer.html">browse the resource tree by clicking here</a>.
-        </p>
-        <p>
-        	Try the simple <a href="/gwt/demo">Google Widget Toolkit example application.</a>
         </p>
         <p>
             Note that you can mount the repository via WebDAV to explore or modify content,
             simply use the <a href="./">root URL</a> as the WebDAV server URL.
         </p>
         
-        <p id="logout" style="display:none">
+                
+                        <p id="logout" style="display:none">
            You are currently logged in as user <b id="username">????</b> to
            workspace <b id="workspace">????</b>. To login with a different
            username (use <em>admin/admin</em> to be allowed to write to the
@@ -120,6 +113,7 @@
             }
         </script>
         
+
         <h2>More info</h2>
         <p>
             Use our
@@ -134,6 +128,154 @@
             The Sling client library tests are available at 
             <a href="sling-test/sling/sling-test.html">sling-test/sling/sling-test.html</a>.
         </p>
+        
+                               <h2>Examples</h2>
+ 
+        <p>There is some example to explore the capabilities of <a href="http://code.google.com/p/livesense">liveSense</a> portal</p>
+        <ul>
+        	<li><a href="/gwt/demo">org.liveSense.sample.gwt.Notes</a> - Source code available <a href="http://github.com/liveSense/org.liveSense.sample.gwt.Notes">here</a><p>This is a simple <a href="http://code.google.com/webtoolkit/">Google Web Toolkit</a> example that demonstrates the GWT web service calling.</li>
+        </ul>
+        
+        
+        
+        <h2>Creating content</h2>
+       
+
+<P>Until we have ready-to-test forms, you can create content with cURL, or you can create an HTML form that posts to the specified URL.</P> 
+ 
+<P>To create a content node (nodes are a <A href="http://jackrabbit.apache.org/" class="external-link" rel="nofollow">JCR</A> concept, a unit of storage) with cURL, use:</P> 
+<DIV class="preformatted panel" style="border-width: 1px;"><DIV class="preformattedContent panelContent"> 
+<PRE>curl -F&quot;sling:resourceType=foo/bar&quot; -F&quot;title=some title&quot; http://admin:admin@localhost:8888/content/mynode
+</PRE> 
+</DIV></DIV> 
+<P>The resulting node can be seen at <A href="http://localhost:8888/content/mynode.html" class="external-link" rel="nofollow">http://localhost:8888/content/mynode.html</A>, or as json format under <A href="http://localhost:8888/content/mynode.json" class="external-link" rel="nofollow">http://localhost:8888/content/mynode.json</A>.</P> 
+ 
+<DIV class="panelMacro"><TABLE class="tipMacro"><COLGROUP><COL width="24"><COL></COLGROUP><TR><TD valign="top"><IMG src="https://cwiki.apache.org/confluence/images/icons/emoticons/check.gif" width="16" height="16" align="absmiddle" alt="" border="0"></TD><TD><B>Monitoring requests</B><BR>Sling provides a simple tool (an OSGi console plugin) to monitor HTTP requests, which helps understand how things work internally. See the <A href="monitoring-requests.html" title="Monitoring Requests">Monitoring Requests</A> page for details.</TD></TR></TABLE></DIV> 
+ 
+<H2>Render your content using server-side javascript (ESP)</H2> 
+ 
+<P>Sling uses scripts or servlets to render and process content.</P> 
+ 
+<P>Several scripting languages are available as additional Sling modules (packaged as OSGi <EM>bundles</EM> that can be installed via the Sling management console), but the launchpad currently only includes the ESP (server-side ECMAscript) and JSP (Java Server Pages) languages modules by default.</P> 
+ 
+<P>To select a script, Sling uses the node's <EM>sling:resourceType</EM> property, if it is set.</P> 
+ 
+<P>That is the case in our example, so the following script will be used by Sling to render the node in HTML, if the script is found at <EM>/apps/foo/bar/html.esp</EM> in the repository.</P> 
+<DIV class="code panel" style="border-width: 1px;"><DIV class="codeHeader panelHeader" style="border-bottom-width: 1px;"><B>html.esp</B></DIV><DIV class="codeContent panelContent"> 
+<PRE class="code-java"> 
+&lt;html&gt;   &lt;body&gt;     &lt;h1&gt;&lt;%= currentNode.title %&gt;&lt;/h1&gt;   &lt;/body&gt; &lt;/html&gt;
+</PRE> 
+</DIV></DIV> 
+<P>To select the script, Sling:</P> 
+<UL> 
+	<LI>looks under <EM>/apps</EM></LI> 
+	<LI>and appends the <EM>sling:resourceType</EM> value of our node ( which is <EM>foo/bar</EM> )</LI> 
+	<LI>and appends <EM>html.esp</EM>, as the extension of our URL is <EM>html</EM> and the language of our script is <EM>esp</EM>.</LI> 
+</UL> 
+ 
+ 
+<P>Store this script under <EM>apps/foo/bar/html.esp</EM>, either using a WebDAV client (connected to <A href="http://admin:admin@localhost:8888/" class="external-link" rel="nofollow">http://admin:admin@localhost:8888/</A>), or using cURL as shown here, after creating the <EM>html.esp</EM> script in the current directory on your system:</P> 
+<DIV class="preformatted panel" style="border-width: 1px;"><DIV class="preformattedContent panelContent"> 
+<PRE>curl -X MKCOL http://admin:admin@localhost:8888/apps/foo
+curl -X MKCOL http://admin:admin@localhost:8888/apps/foo/bar
+</PRE> 
+</DIV></DIV> 
+<P>create a local file <EM>html.esp</EM> and copy above content.</P> 
+<DIV class="preformatted panel" style="border-width: 1px;"><DIV class="preformattedContent panelContent"> 
+<PRE>curl -T html.esp http://admin:admin@localhost:8888/apps/foo/bar/html.esp
+</PRE> 
+</DIV></DIV> 
+ 
+<P>The HTML rendering of your node, at <A href="http://localhost:8888/content/mynode.html" class="external-link" rel="nofollow">http://localhost:8888/content/mynode.html</A>, is now created by this ESP script. You should see the node's title alone as an &lt;h1&gt; element in that page.</P> 
+ 
+<P>A script named <EM>POST.esp</EM> instead of <EM>html.esp</EM> would be called for a POST request, <EM>DELETE.esp</EM> for DELETE, <EM>xml.esp</EM> for a GET request with a <EM>.xml</EM> extension, etc. See <A href="http://cwiki.apache.org/SLING/url-to-script-resolution.html" class="external-link" rel="nofollow">URL to Script Resolution</A> on the Sling wiki for more info.</P> 
+ 
+<P>Servlets can also be easily &quot;wired&quot; to handle specific resource types, extensions, etc., in the simplest case by using SCR annotations in the servlet source code. Servlets and scripts are interchangeable when it comes to processing Sling requests.</P> 
+ 
+<H2>What next?</H2> 
+ 
+<P>These simple examples show how Sling uses scripts to work with JCR data, based on <EM>sling:resourceType</EM> or node types.</P> 
+ 
+<P>There's much more to Sling of course - you'll find some additional simple examples below, and above in the <EM>see also</EM> section.</P> 
+ 
+<P>We are working on debugging features to help trace the way Sling processes requests. Have a look at <A href="https://issues.apache.org/jira/browse/SLING-3" class="external-link" rel="nofollow">SLING-3</A> to see what's possible already.</P> 
+ 
+<H2>Let Sling generate the path of a newly created node.</H2> 
+ 
+<P>To create a node with a unique path at a given location, end the URL of the POST request with <EM>/&#42;</EM>.</P> 
+ 
+<P>In this case, the Sling response redirects to the URL of the created node.</P> 
+ 
+<P>Start by creating a new <EM>/blog</EM> folder:</P> 
+<DIV class="preformatted panel" style="border-width: 1px;"><DIV class="preformattedContent panelContent"> 
+<PRE>curl -X POST &quot;http://admin:admin@localhost:8888/content/blog&quot;
+</PRE> 
+</DIV></DIV> 
+<P>And create a node with a Sling-generated name under it:</P> 
+<DIV class="preformatted panel" style="border-width: 1px;"><DIV class="preformattedContent panelContent"> 
+<PRE>curl -D - -F&quot;title=Adventures with Sling&quot; &quot;http://admin:admin@localhost:8888/content/blog/*&quot;
+</PRE> 
+</DIV></DIV> 
+<P>Using cURL's <EM>&#45;D</EM> option shows the full HTTP response, which includes a <EM>Location</EM> header to indicate where the new node was created:</P> 
+<DIV class="preformatted panel" style="border-width: 1px;"><DIV class="preformattedContent panelContent"> 
+<PRE>Location: http://localhost:8888/content/blog/adventures_with_slin_0
+</PRE> 
+</DIV></DIV> 
+<P>The actual node name might not be <EM>adventures_with_slin_0</EM> &#45; depending on existing content in your repository, Sling will find a unique name for this new node, based on several well-know property values like title, description, etc. which are used for this if provided.</P> 
+ 
+<P>So, in our case, our new node can be displayed in HTML via the <A href="http://localhost:8888/content/blog/adventures_with_slin_0.html" class="external-link" rel="nofollow">http://localhost:8888/content/blog/adventures_with_slin_0.html</A> URL.</P> 
+ 
+<P>Note that we didn't set a <EM>sling:resourceType</EM> property on our node, so if you want to render that node with a script, you'll have to store the script under <EM>/apps/nt/unstructured/html.esp</EM>.</P> 
+ 
+<H2>Add a page header with sling.include</H2> 
+ 
+<P>The <EM>sling.include</EM> function can be called from scripts to include the rendered result of another node.</P> 
+ 
+<P>In this example, we create a node at <EM>/content/header</EM>, rendered with a logo using an <EM>html.esp</EM> script, then use that header at the top of the <EM>html.esp</EM> script that we created previously for the <EM>foo/bar</EM> resource type.</P> 
+ 
+<P>Start by checking that <A href="http://localhost:8888/content/mynode.html" class="external-link" rel="nofollow">http://localhost:8888/content/mynode.html</A> is rendered using the <EM>html.esp</EM> script created above.</P> 
+ 
+<P>Create this script and name it <EM>header.esp</EM>:</P> 
+<DIV class="code panel" style="border-width: 1px;"><DIV class="codeHeader panelHeader" style="border-bottom-width: 1px;"><B>header.esp</B></DIV><DIV class="codeContent panelContent"> 
+<PRE class="code-java"> 
+&lt;div&gt;   &lt;p style=<SPAN class="code-quote">&quot;color:blue;&quot;</SPAN>&gt;     &lt;img src=<SPAN class="code-quote">&quot;/images/sling.jpg&quot;</SPAN> align=<SPAN class="code-quote">&quot;right&quot;</SPAN>/&gt;     &lt;%= currentNode.headline %&gt;   &lt;/p&gt; &lt;/div&gt;
+</PRE> 
+</DIV></DIV> 
+<P>Upload it so that it is used to render resources having <EM>sling:resourceType=foo/header</EM>:</P> 
+<DIV class="preformatted panel" style="border-width: 1px;"><DIV class="preformattedContent panelContent"> 
+<PRE>curl -X MKCOL  http://admin:admin@localhost:8888/apps/foo/header/
+curl -T header.esp http://admin:admin@localhost:8888/apps/foo/header/html.esp
+</PRE> 
+</DIV></DIV> 
+<P>Create the header node:</P> 
+<DIV class="preformatted panel" style="border-width: 1px;"><DIV class="preformattedContent panelContent"> 
+<PRE>curl -F&quot;sling:resourceType=foo/header&quot; -F&quot;headline=Hello, Sling world&quot; http://admin:admin@localhost:8888/content/header
+</PRE> 
+</DIV></DIV> 
+<P>Upload the logo that the script uses (using sling.jpg or another logo in the current directory):</P> 
+<DIV class="preformatted panel" style="border-width: 1px;"><DIV class="preformattedContent panelContent"> 
+<PRE>curl -X MKCOL  http://admin:admin@localhost:8888/images/
+curl -T sling.jpg  http://admin:admin@localhost:8888/images/sling.jpg
+</PRE> 
+</DIV></DIV> 
+<P>And check that the header is rendered with the logo at <A href="http://localhost:8888/content/header.html" class="external-link" rel="nofollow">http://localhost:8888/content/header.html</A>.</P> 
+ 
+<P>Now, update the html.esp script that we created for our first example above, to include the header:</P> 
+<DIV class="code panel" style="border-width: 1px;"><DIV class="codeHeader panelHeader" style="border-bottom-width: 1px;"><B>html.esp</B></DIV><DIV class="codeContent panelContent"> 
+<PRE class="code-java"> 
+&lt;html&gt;   &lt;body&gt;     &lt;div id=<SPAN class="code-quote">&quot;header&quot;</SPAN>&gt;       &lt;% sling.include(<SPAN class="code-quote">&quot;/content/header&quot;</SPAN>); %&gt;     &lt;/div&gt;     &lt;h1&gt;&lt;%= currentNode.title %&gt;&lt;/h1&gt;   &lt;/body&gt; &lt;/html&gt;
+</PRE> 
+</DIV></DIV> 
+<P>And upload it again to replace the previous version:</P> 
+<DIV class="preformatted panel" style="border-width: 1px;"><DIV class="preformattedContent panelContent"> 
+<PRE>curl -T html.esp http://admin:admin@localhost:8888/apps/foo/bar/html.esp
+</PRE> 
+</DIV></DIV> 
+<P>The <A href="http://localhost:8888/content/mynode.html" class="external-link" rel="nofollow">http://localhost:8888/content/mynode.html</A>, once refreshed, now shows the blue headline and logo, and this layout also applies to any node created with <EM>sling:resourceType=foo/bar</EM>.</P> 
+        
+        
+        
+
     </div>
   </body>
 </html>
