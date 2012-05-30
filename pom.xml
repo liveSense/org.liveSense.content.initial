@@ -34,7 +34,7 @@
   <artifactId>org.liveSense.content.initial</artifactId>
   <packaging>bundle</packaging>
 
-  <name>liveSense initial content</name>
+  <name>liveSense :: JCR Initial content</name>
   <version>1.0.1-SNAPSHOT</version>
   <description>
     This bundle provides content that is loaded in the JCR repository for the liveSense portal
