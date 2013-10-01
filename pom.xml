@@ -36,7 +36,7 @@
   <packaging>bundle</packaging>
 
   <name>liveSense :: JCR Initial content</name>
-  <version>1.0.1-SNAPSHOT</version>
+  <version>1.0.2-SNAPSHOT</version>
   <description>
     liveSense Initial content. This bundle provides content that is loaded in the JCR repository by default for the liveSense portal
   </description>

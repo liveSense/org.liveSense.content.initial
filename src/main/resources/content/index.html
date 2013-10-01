@@ -1,281 +1,1249 @@
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>liveSense</title>
+
+	<link href="/defaultpage/css/defaultportal-custom-bootstrap.css" rel="stylesheet" />
+	<link rel="shortcut icon" href="/defaultpage/img/favicon.ico" />
+	<link rel="icon" href="/defaultpage/img/favicon.ico" />
+</head>
+
+<body class="preview" id="top" data-spy="scroll" data-target="header-menu" data-offset="60">
+
+	<!-- Main menu -->
+
+	
+
+
+
+
+
+
+
+
+
+
+
+<nav id="header-menu" class="navbar navbar-default navbar-static-top" role="navigation">
+
+	<div class="container">
+
+		<div class="navbar-header">
+
+			<button type="button" class="navbar-toggle" data-toggle="collapse"
+				data-target=".navbar-ex1-collapse">
+				<span class="sr-only">Toggle navigation</span> <span
+					class="icon-bar"></span> <span class="icon-bar"></span> <span
+					class="icon-bar"></span>
+			</button>
+
+			<a class="navbar-brand" href="#"><img
+				src="/defaultpage/img/livesense_logo_v3_defaultportal.png"
+				alt="logo" /></a>
+
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse navbar-ex1-collapse"
+			id="main-menu">
+
+			<ul class="nav navbar-nav pull-right" id="main-menu-right">
+
+				
+				
+					
+					
+						
+							
+								
+							
+							
+						
+					
+
+					
+
+					
+
+					<!-- Selecting menu level 2 -->
+					
+					
+
+					
+						
+						
+
+							
+								
+								
+									<li class="subnav active"><a
+										href="#index">Home</a></li>
+								
+							
+
+						
+					
+
+				
+					
+					
+						
+							
+								
+							
+							
+						
+					
+
+					
+
+					
+
+					<!-- Selecting menu level 2 -->
+					
+					
+
+					
+						
+						
+
+							
+								
+								
+									<li class="subnav "><a
+										href="#technology">Technology</a></li>
+								
+							
+
+						
+					
+
+				
+					
+					
+						
+							
+								
+							
+							
+						
+					
+
+					
+
+					
+
+					<!-- Selecting menu level 2 -->
+					
+					
+
+					
+						
+						
+
+							
+								
+								
+									<li class="subnav "><a
+										href="#tools">Tools</a></li>
+								
+							
+
+						
+					
+
+				
+					
+					
+						
+							
+								
+							
+							
+						
+					
+
+					
+
+					
+
+					<!-- Selecting menu level 2 -->
+					
+					
+
+					
+						
+						
+
+							
+								
+								
+									<li class="subnav "><a
+										href="#samples">Samples</a></li>
+								
+							
+
+						
+					
+
+				
+					
+					
+						
+							
+								
+							
+							
+						
+					
+
+					
+						
+					
+
+					
+
+					<!-- Selecting menu level 2 -->
+					
+					
+
+					
+					<!--	
+
+							<li class="dropdown"><a class="dropdown-toggle"
+								data-toggle="dropdown" href="#">Language
+									<b class="caret"></b>
+							</a>
+								<ul class="dropdown-menu" id="swatch-menu">
+
+									
+										
+										
+											
+										
+
+										
+											
+										
+
+										
+											
+											
+												<li><a href="javascript: post_language('en_US')">English</a></li>
+											
+										
+									
+										
+										
+											
+										
+
+										
+											
+										
+
+										
+											
+											
+												<li><a href="javascript: post_language('hu_HU')">Hungarian</a></li>
+											
+										
+									
+								</ul></li>
+
+						
+						
+					
+
+				
+					
+					
+						
+							
+								
+							
+							
+						
+					
+
+					
+
+					-->
+
+					<!-- Selecting menu level 2 -->
+					
+					
 <!--
-  Licensed to the Apache Software Foundation (ASF) under one
-  or more contributor license agreements.  See the NOTICE file
-  distributed with this work for additional information
-  regarding copyright ownership.  The ASF licenses this file
-  to you under the Apache License, Version 2.0 (the
-  "License"); you may not use this file except in compliance
-  with the License.  You may obtain a copy of the License at
+					
+						
 
-   http://www.apache.org/licenses/LICENSE-2.0
+							<li class="dropdown"><a class="dropdown-toggle"
+								data-toggle="dropdown" href="#">Layout
+									<b class="caret"></b>
+							</a>
+								<ul class="dropdown-menu" id="swatch-menu">
 
-  Unless required by applicable law or agreed to in writing,
-  software distributed under the License is distributed on an
-  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-  KIND, either express or implied.  See the License for the
-  specific language governing permissions and limitations
-  under the License.
--->
+									
+										
+										
+											
+										
 
-  <!-- Do not remove this comment, used for Launchpad integration tests -->
-  <head>
-    <title>Welcome to the liveSense portal</title>
-    <link rel="stylesheet" type="text/css" href="livesense.css"/>
-    <script src="system/sling.js"></script>
-  </head>
-  <body>
-    <div class="title">
-        <div class="logo">
-            <a href="http://code.google.com/p/livesense">
-                <img border="0" src="livesense-logo.png"/>
-            </a>
-        </div>
-    </div>
-    
-    <div class="menu">
-       <div id="menu_login" style="display:none; padding: 10px;">
-          <a href="system/sling/login.html">Login</a> | <a href="signup.html">Sign Up</a>
-     </div>
-       <div id="menu_logout" style="display:none; padding: 10px;">
-          <strong id="menu_username"> ??? </strong> | <a href="system/sling/logout.html">Logout</a>
-     </div>
-    </div>          
+										
+
+										
+											
+											
+												<li><a href="index.html?onepage=true">One Page</a></li>
+											
+										
+									
+										
+										
+											
+										
+
+										
+
+										
+											
+											
+												<li><a href="index.html">Multi Page</a></li>
+											
+										
+									
+								</ul></li>
+
+						-->
+						
+					
+
+				
+
+			</ul>
+
+		</div>
+	</div>
+</nav>
+
+
+
+	<!-- Content -->
+	
+	
+		
+			
+			<!-- One Page Layout -->
+			
+			
+				
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+
+
+<section id="index">
+
+	<div class="container">
+
+		<!-- Content Header -->
+
+		<div class="row">
+
+			<div class="col-md-12">
+
+				<div class="page-header">
+					<h1>Welcome to the liveSense!</h1>
+					<p>Congratulations! You have setup liveSense successfully. This is the default liveSense page, contains general information about this web application framework and links with short descriptions to the administrating tools and to the built-in samples.<br/><br/>If you are a <b>user</b> and you are seeing this, maybe this is a new liveSense installation, or this page is under construction or being updated. Please come back later!<br/><br/><b>Thanks for using liveSense!</b></p>
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- Content Details -->
+
+		<div class="row">
+
+			<div class="col-md-12">
+
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+
+			<!-- Display first row specific things -->
+			
+				
+					
+						<div class="row">
+					
+					
+				
+			
+
+			<!-- Display the current article -->
+			<div class="col-md-4">
+				<h3>About liveSense</h3>
+				<p>liveSense is a <b>Java</b> based web application framework designed for <b>portals</b>, web-based <b>'cloud'</b> applications and various <b>SAAS</b>-solutions.<br/>liveSense is built on the <b>OSGi</b> modell, which provides a modularized, dynamic runtime environment, where the modules are <b>manageable at runtime</b>.</p>
+			</div>
+
+			<!-- Display last row specific things -->
+			
+			
+			
+
+			
+		
+
+			<!-- Display first row specific things -->
+			
+
+			<!-- Display the current article -->
+			<div class="col-md-4">
+				<h3>Technology</h3>
+				<p>liveSense is based on <a  href=‘http://sling.apache.org'>Apache Sling</a>, which is a content-driven CMS system programmable in several script languages (ESP, Scala, JSP, Freemarker, Groovy). liveSense can operate under any Java-enabled operation system - <b>Windows, Linux, Mac OS X, Solaris</b> - both standalone (it contains integrated web server) and web application - <b>IBM WebSphere, Oracle Weblogic, Apache Tomcat, JBoss </b> - mode. The CMS data can be stored in the file-system or in a relational database.</p><p class='pull-right'><a href='#technology'>More information...</a></p>
+			</div>
+
+			<!-- Display last row specific things -->
+			
+			
+			
+
+			
+		
+
+			<!-- Display first row specific things -->
+			
+
+			<!-- Display the current article -->
+			<div class="col-md-4">
+				<h3>License</h3>
+				<p>liveSense is licensed under <a  href=‘http://www.apache.org/licenses/LICENSE-2.0.html'>Apache License Version 2.0</a>, which means the source code is <b>free</b> to use even for developing <b>commercial</b> products.</p>
+			</div>
+
+			<!-- Display last row specific things -->
+			
+
+				
+
+				</div><br /><br />
+				
+			
+			
+			
+
+			
+				
+			
+		
+	
+
+
+
+
+
+			</div>
+
+		</div>
+
+	</div>
+
+</section>
+
+			
+				
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+
+
+<section id="technology">
+
+	<div class="container">
+
+		<!-- Content Header -->
+
+		<div class="row">
+
+			<div class="col-md-12">
+
+				<div class="page-header">
+					<h1>Technology</h1>
+					<p>liveSense is a web application framework that uses <a href='http://sling.apache.org'>Apache Sling</a> and <a href='http://jackrabbit.apache.org'>Apache Jackrabbit</a> to store and manage content. liveSense is compliant to Java Content Repository - <b>JSR-170</b> and <b>JSR-283</b> standards, which ensures the easy integration to other CMS systems. The whole CMS has XML import and export functionality.<br/><br/>liveSense is an <b>extended</b> version of <b>Apache Sling</b>, see the integrated technologies below.</p>
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- Content Details -->
+
+		<div class="row">
+
+			<div class="col-md-12">
+
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+
+			<!-- Display first row specific things -->
+			
+				
+					
+					
+						<div class="row endrow">
+					
+				
+			
+
+			<!-- Display the current article -->
+			<div class="col-md-4">
+				<h3>General</h3>
+				<ul><li>REST-based operation</li><li>SOA-based operation</li><li>ACL-based security model</li><li>LDAP and ActiveDirectory support</li><li>I18N support</li><li>WebDav access of the CMS</li><li>Job and Event handling system</li><li>Virtual domains handling</li><li>Database pooler</li><li>Unified querying for MySQL, Oracle, Firebird, MSSQL</li><li>Remote logging</li></ul>
+			</div>
+
+			<!-- Display last row specific things -->
+			
+			
+			
+
+			
+		
+
+			<!-- Display first row specific things -->
+			
+
+			<!-- Display the current article -->
+			<div class="col-md-4">
+				<h3>Apache Sling</h3>
+				<p><a href='http://sling.apache.org'>Apache Sling</a> is an open source Web framework for the Java platform designed to create content-centric applications on top of a JSR-170-compliant (aka JCR) content repository. Apache Sling allows developers to deploy their application components as OSGi bundles or as scripts and templates in the content repository. Supported scripting languages are JSP, server-side JavaScript, Ruby, Velocity.<br/>The goal of Apache Sling is to expose content in the content repository as HTTP resources, fostering a RESTful style of application architecture.</p><p class='pull-right'><a href='http://en.wikipedia.org/wiki/Apache_Sling'>More information...</a></p>
+			</div>
+
+			<!-- Display last row specific things -->
+			
+			
+			
+
+			
+		
+
+			<!-- Display first row specific things -->
+			
+
+			<!-- Display the current article -->
+			<div class="col-md-4">
+				<h3>Apache Jackrabbit</h3>
+				<p><a href='http://jackrabbit.apache.org'>Apache Jackrabbit</a> is an open source content repository for the Java platform. Jackrabbit used as the reference implementation of JSR-170, specified within the Java Community Process.<br/>Java Content Repository (JCR) specifies an API for application developers (and application frameworks) to use for interaction with modern content repositories that provide content services such as searching, versioning, transactions, etc.</p><p class='pull-right'><a href='http://en.wikipedia.org/wiki/Apache_Jackrabbit'>More information...</a></p>
+			</div>
+
+			<!-- Display last row specific things -->
+			
+
+				
+
+				</div><br /><br />
+				
+			
+			
+			
+
+			
+				
+			
+		
+
+			<!-- Display first row specific things -->
+			
+				
+					
+					
+						<div class="row endrow">
+					
+				
+			
+
+			<!-- Display the current article -->
+			<div class="col-md-4">
+				<h3>OSGi</h3>
+				<p>The<a href='http://www.osgi.org'>OSGi framework (Open Services Gateway initiative)</a> is a module system and service platform for the Java programming language that implements a complete and dynamic component model.<br/>Applications or components (coming in the form of bundles for deployment) can be remotely installed, started, stopped, updated, and uninstalled without requiring a reboot; management of Java packages/classes is specified in great detail.<br/>Application life cycle management (start, stop, install, etc.) is done via APIs that allow for remote downloading of management policies. The service registry allows bundles to detect the addition of new services, or the removal of services, and adapt accordingly.</p><p class='pull-right'><a href='http://en.wikipedia.org/wiki/OSGi'>More information...</a></p>
+			</div>
+
+			<!-- Display last row specific things -->
+			
+			
+			
+
+			
+		
+
+			<!-- Display first row specific things -->
+			
+
+			<!-- Display the current article -->
+			<div class="col-md-4">
+				<h3>Activiti</h3>
+				<p><a href='http://activiti.org'>Activiti</a> is an open-source workflow engine written in Java that can execute business processes described in BPMN 2.0. The project is actually a suite of applications that work together:</p><ul><li>Modeler, a web-based graphical workflow authoring interface based on Signavio.</li><li>Designer, an Eclipse plug-in for developing workflows.</li><li>Engine, the core workflow processor.</li><li>Explorer, a web tool to deploy process definitions, start new process instances and carry-out work on workflows.</li><li>Cycle, a web app for collaboration between business users and software engineers.</li></ul><p class='pull-right'><a href='http://en.wikipedia.org/wiki/Activiti_(software)'>More information...</a></p>
+			</div>
+
+			<!-- Display last row specific things -->
+			
+			
+			
+
+			
+		
+
+			<!-- Display first row specific things -->
+			
+
+			<!-- Display the current article -->
+			<div class="col-md-4">
+				<h3>Apache Solr</h3>
+				<p><a href='http://lucene.apache.org/solr/'>Solr</a> is an open source enterprise search platform from the Apache Lucene project. Its major features include powerful full-text search, hit highlighting, faceted search, dynamic clustering, database integration, and rich document (e.g., Word, PDF) handling. Providing distributed search and index replication, Solr is highly scalable.<br/>Solr is written in Java and uses the Lucene Java search library at its core for full-text indexing and search, and has REST-like HTTP/XML and JSON APIs that make it easy to use from virtually any programming language. Solr's powerful external configuration allows it to be tailored to almost any type of application without Java coding, and it has an extensive plugin architecture when more advanced customization is required.</p><p class='pull-right'><a href='http://en.wikipedia.org/wiki/Apache_Solr'>More information...</a></p>
+			</div>
+
+			<!-- Display last row specific things -->
+			
+
+				
+
+				</div><br /><br />
+				
+			
+			
+			
+
+			
+				
+			
+		
+
+			<!-- Display first row specific things -->
+			
+				
+					
+					
+						<div class="row endrow">
+					
+				
+			
+
+			<!-- Display the current article -->
+			<div class="col-md-4">
+				<h3>GWT</h3>
+				<p><a href='https://developers.google.com/web-toolkit/'>Google Web Toolkit (GWT)</a> is an open source set of tools that allows web developers to create and maintain complex JavaScript front-end applications in Java. Other than a few native libraries, everything is Java source that can be built on any supported platform with the included GWT Ant build files.<br/>GWT emphasizes reusable, efficient solutions to recurring Ajax challenges, namely asynchronous remote procedure calls, history management, bookmarking, internationalization and cross-browser portability.</p><p class='pull-right'><a href='http://en.wikipedia.org/wiki/Google_Web_Toolkit'>More information...</a></p>
+			</div>
+
+			<!-- Display last row specific things -->
+			
+			
+			
+
+			
+		
+
+			<!-- Display first row specific things -->
+			
+
+			<!-- Display the current article -->
+			<div class="col-md-4">
+				<h3>GXT</h3>
+				<p><a href='http://www.sencha.com/products/gxt/'>GXT</a>, also known as Ext GWT is a dual-licensed component framework from Sencha. GXT is a fastest and powerful way to create rich web-based applications using Java.<br/>GXT uses the Google Web Toolkit (GWT) compiler that allows developers to write applications in Java and compile code into highly optimized cross-browser HTML5 and JavaScript.</p><p class='pull-right'><a href='http://www.sencha.com/products/gxt/examples/'>More information...</a></p>
+			</div>
+
+			<!-- Display last row specific things -->
+			
+			
+			
+
+			
+		
+
+			<!-- Display first row specific things -->
+			
+
+			<!-- Display the current article -->
+			<div class="col-md-4">
+				<h3>Jasper Reports</h3>
+				<p><a href='http://community.jaspersoft.com/project/jasperreports-library'>JasperReports</a> is an open source Java reporting tool that can write to a variety of targets, such as: screen, a printer, into PDF, HTML, Microsoft Excel, RTF, ODT, Comma-separated values or XML files.<br/>It can be used in Java-enabled applications, including Java EE or web applications, to generate dynamic content. It reads its instructions from an XML or .jasper file. JasperReports is part of the Lisog open source stack initiative.</p><p class='pull-right'><a href='http://en.wikipedia.org/wiki/JasperReports'>More information...</a></p>
+			</div>
+
+			<!-- Display last row specific things -->
+			
+
+				
+
+				</div><br /><br />
+				
+			
+			
+			
+
+			
+				
+			
+		
+
+			<!-- Display first row specific things -->
+			
+				
+					
+						<div class="row">
+					
+					
+				
+			
+
+			<!-- Display the current article -->
+			<div class="col-md-4">
+				<h3>Apache CXF</h3>
+				<p><a href='http://cxf.apache.org/'>Apache CXF</a> is an open-source, fully featured Web services framework. It originated as the combination of two open-source projects: Celtix developed by IONA Technologies and XFire developed by a team hosted at Codehaus. These two projects were combined by people working together at the Apache Software Foundation. The name CXF derives from combining the 'Celtix' and 'XFire' project names.</p><p class='pull-right'><a href='http://en.wikipedia.org/wiki/Apache_CXF'>More information...</a></p>
+			</div>
+
+			<!-- Display last row specific things -->
+			
+
+				
+
+				</div><br /><br />
+				
+			
+			
+			
+
+			
+		
+	
+
+
+
+
+
+			</div>
+
+		</div>
+
+	</div>
+
+</section>
+
+			
+				
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+
+
+<section id="tools">
+
+	<div class="container">
+
+		<!-- Content Header -->
+
+		<div class="row">
+
+			<div class="col-md-12">
+
+				<div class="page-header">
+					<h1>Built-in tools</h1>
+					<p>liveSense contains more efficient built-in administrative applications to inspect and manage OSGi framework instances and the JCR repository using your favorite Web Browser.<br/><br/><b>Remark</b>: to log in to the console or to write into the repository use <b>admin/admin</b> as the default user/password.</p>
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- Content Details -->
+
+		<div class="row">
+
+			<div class="col-md-12">
+
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+
+			<!-- Display first row specific things -->
+			
+				
+					
+						<div class="row">
+					
+					
+				
+			
+
+			<!-- Display the current article -->
+			<div class="col-md-4">
+				<h3>Felix Web Console</h3>
+				<p>The Sling's <a href='http://felix.apache.org/site/apache-felix-web-console.html'>Apache Felix Web Console</a> is a great tool to inspect and manage the OSGi framework. You can browse, install or delete the OSGi bundles and components, set the configuration of the services, etc. <b>at runtime</b>. The Web Console is based on a plug-in system, there are a lot of useful plug-ins, for example to monitor memory usage or events.</p><ul><li>Application link: <a href='../system/console'>Felix Web Console</a></li></ul>
+			</div>
+
+			<!-- Display last row specific things -->
+			
+			
+			
+
+			
+		
+
+			<!-- Display first row specific things -->
+			
+
+			<!-- Display the current article -->
+			<div class="col-md-4">
+				<h3>JCR Explorer</h3>
+				<p>The Sling's built-in JCR Explorer is a simple but efficient tool to browse and modify the resource tree and to test your JCR SQL queries. Note that you can mount the repository via WebDAV to explorer or modify content, simply use the <a href='/'>root URL</a> as the WebDAV server URL.</p><ul><li>Application link: <a href='../.explorer.html'>JCR Explorer</a></li></ul>
+			</div>
+
+			<!-- Display last row specific things -->
+			
+			
+			
+
+			
+		
+
+			<!-- Display first row specific things -->
+			
+
+			<!-- Display the current article -->
+			<div class="col-md-4">
+				<h3>liveSense JCR Explorer</h3>
+				<p>GWT-based application to manage the content repository.</p><ul><li>Application link: <a href='../jcrexplorer.html'>liveSense JCR Explorer</a></li></ul>
+			</div>
+
+			<!-- Display last row specific things -->
+			
+
+				
+
+				</div><br /><br />
+				
+			
+			
+			
+
+			
+				
+			
+		
+	
+
+
+
+
+
+			</div>
+
+		</div>
+
+	</div>
+
+</section>
+
+			
+				
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+
+
+<section id="samples">
+
+	<div class="container">
+
+		<!-- Content Header -->
+
+		<div class="row">
+
+			<div class="col-md-12">
+
+				<div class="page-header">
+					<h1>Sample applications</h1>
+					<p>liveSense has many built-in sample applications to demonstrate the capabilities of this OSGi-based framework and how easy it is to use it.<br/><br/><b>Remark:</b> if you use any third-party web container/server (for example Apache Tomcat) instead of the built-in, we recommend to deploy livesense as ROOT web application (rename the ‘org.liveSense.launchpad-xxx.war’ file to ‘ROOT.war’).</p>
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- Content Details -->
+
+		<div class="row">
+
+			<div class="col-md-12">
+
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+
+			<!-- Display first row specific things -->
+			
+				
+					
+						<div class="row">
+					
+					
+				
+			
+
+			<!-- Display the current article -->
+			<div class="col-md-4">
+				<h3>Notes</h3>
+				<p>Notes is a simple note taking application which is demonstrates the web service calling of the integrated Google Web Toolkit.</p><ul><li>Application link: <a href='samples/notes.html'>Notes</a></li><li>Source code: <a href='http://www.github.com/liveSense/org.liveSense.sample.gwt.notes'>org.liveSense.sample.gwt.notes</a></li></ul>
+			</div>
+
+			<!-- Display last row specific things -->
+			
+			
+			
+
+			
+		
+
+			<!-- Display first row specific things -->
+			
+
+			<!-- Display the current article -->
+			<div class="col-md-4">
+				<h3>Simple Portal</h3>
+				<p>Simple Portal is a JSP-scripted portal example which is demonstrates the usage of Apache Sling and the JCR repository.</p><ul><li>Application link: <a href='simpleportal.html'>Simple Portal</a></li><li>Source code: <a href='http://www.github.com/liveSense/org.liveSense.sample.simplePortal'>org.liveSense.sample.simplePortal</a></li></ul>
+			</div>
+
+			<!-- Display last row specific things -->
+			
+
+				
+
+				</div><br /><br />
+				
+			
+			
+			
+
+			
+		
+	
+
+
+
+
+
+			</div>
+
+		</div>
+
+	</div>
+
+</section>
+
+			
+		
+		
+	
+
+
+	<!-- Footer -->		
+		
+	<footer id="footer">
+
+		<div class="container">
+
+        	<div class="row">
+
+            	<div class="col-md-12">
+
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+
+			<!-- Display first row specific things -->
+			
+				
+					
+						<div class="row">
+					
+					
+				
+			
+
+			<!-- Display the current article -->
+			<div class="col-md-4">
+				<h3>Resources</h3>
+				Questions and Answers at <a href='http://www.livesense.in'>liveSense Portal Q&amp;A</a><br/>Source code on <a href='http://www.github.com/livesense'>GitHub</a><br/>liveSense on <a href='http://www.code.google.com/p/livesense'>Google Code</a>
+			</div>
+
+			<!-- Display last row specific things -->
+			
+			
+			
+
+			
+		
+
+			<!-- Display first row specific things -->
+			
+
+			<!-- Display the current article -->
+			<div class="col-md-4">
+				<h3>Legal notice & Contact</h3>
+				Code licensed under the <a href='http://www.apache.org/licenses/LICENSE-2.0'>Apache License v2.0</a>.<br/>Contact email: <a href='mailto:info@livesense.in'>info@livesense.in</a>
+			</div>
+
+			<!-- Display last row specific things -->
+			
+
+				
+					<div class="col-md-4"><a href="http://www.livesense.in"><img class="pull-right" src="/defaultpage/img/livesense_logo_v3_poweredby_2.png" alt="poweredby"/></a>
+					</div>
+				
+
+				</div><br /><br />
+				
+			
+			
+			
+
+			
+		
+	
+
+
+
+
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</footer>
+	
+	<!-- Javascript Section -->	
+
+	<script type="text/javascript">
+	function post_language(lang_code) {
+		
+		var myForm = document.createElement("form");
+  		myForm.method="post" ;
+  		myForm.action = "/session/language";
+
+  		var myInput = document.createElement("input") ;
+  		myInput.setAttribute("name", "locale");
+  		myInput.setAttribute("value", lang_code);
+  		myForm.appendChild(myInput) ;
+
+  		document.body.appendChild(myForm) ;
+  		myForm.submit() ;
+  		document.body.removeChild(myForm) ;
+	}
+	</script> 
+
+    <script src="/defaultpage/js/jquery-1.10.2.min.js"></script>
+    <script src="/defaultpage/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/defaultpage/js/jquery.smooth-scroll.min.js"></script>
+    <script type="text/javascript" src="/defaultpage/js/collapse.js"></script>
+    <script type="text/javascript" src="/defaultpage/js/scrollspy.js"></script>
+</body>
   
-    <div class="main">
-        <h1>Welcome to the liveSense portal</h1>
-        
-        <h2>What is liveSense?</h2>
-		<p>liveSense is a Java based portal engine utilizes the most recent Java portal technologies, like Apache Sling, Google Widget Tookit and the amazing OSGi modell. liveSense is a glue, because Sling is a portal API that doesn't contain toolsets that need to build complete portals easy. The goal of liveSense, every developer able to develop web application easy without to spend a lot of time to integrate these technologies. liveSense is a JCR 2.0 compliant CMS (based on Apache Sling and Apache Jackrabbit)
-        </p>
-        <p>
-            <a href="http://code.google.com/p/livesense">liveSense</a> is a web framework that uses <a href="http://sling.apache.org">Apache Sling</a>, a Java Content Repository, 
-            such as <a href="http://jackrabbit.apache.org">Apache Jackrabbit</a>, to store and manage content.
-
-			liveSense portal is an extended version of Apache Sling, adding some portal functions, as registration framework, email framework, activation framework, thumbnail, captcha.
-
-            Sling applications use either scripts or Java servlets, selected based on simple name conventions, 
-            to process HTTP requests in a RESTful way.
-
-            The embedded Apache Felix OSGi framework and <a href="system/console">console</a> provide a dynamic 
-            runtime environment, where code and content bundles can be loaded, unloaded and reconfigured at runtime.
-        </p>
-        <p>
-            The liveSense portal is a ready-to-run Sling configuration, providing an embedded 
-            JCR content repository and web server, a selection of liveSense and Sling components, and 
-            documentation and examples. The Launchpad makes it easy to get started with Sling 
-            and to develop script-based applications.
-        </p>
-        
-        <h2>Getting started</h2>
-        
-        <p>
-            If you have the "Sling Explorer" bundle installed, 
-            you can <a href=".explorer.html">browse the resource tree by clicking here</a>.
-        </p>
-        <p>
-            Note that you can mount the repository via WebDAV to explore or modify content,
-            simply use the <a href="./">root URL</a> as the WebDAV server URL.
-        </p>
-        
-                
-                        <p id="logout" style="display:none">
-           You are currently logged in as user <b id="username">????</b> to
-           workspace <b id="workspace">????</b>. To login with a different
-           username (use <em>admin/admin</em> to be allowed to write to the
-           repository), follow <a href="system/sling/logout"
-           title="Click to Logout">this link</a> to logout first.
-        </p>
-        
-        <p id="login" style="display:none">
-           You are not currently logged in. To login (use <em>admin/admin</em>
-           to be allowed to write to the repository), follow
-           <a href="system/sling/login" title="Click to Login">this link</a>.
-        </p>
-        
-        <script language="javascript">
-            var info = Sling.getSessionInfo();
-            document.getElementById("username").innerHTML = info.userID;
-            document.getElementById("workspace").innerHTML = info.workspace;
-            document.getElementById("menu_username").innerHTML = info.userID;
-            
-            if ("anonymous" == info.userID) {
-              // anonymous, assume not logged int
-              document.getElementById("login").style.display="block";
-              document.getElementById("logout").style.display="none";
-              document.getElementById("menu_login").style.display="block";
-              document.getElementById("menu_logout").style.display="none";
-            } else {
-              document.getElementById("login").style.display="none";
-              document.getElementById("logout").style.display="block";
-              document.getElementById("menu_login").style.display="none";
-              document.getElementById("menu_logout").style.display="block";
-            }
-        </script>
-        
-
-        <h2>More info</h2>
-        <p>
-            Use our
-            <a href="http://groups.google.com/group/livesense-dev">group (http://groups.google.com/group/livesense-dev)
-            </a> to contact the liveSense developers team.
-        </p>    
-        <p>
-            The liveSense OSGi management console is available at <a href="system/console">system/console</a>,
-            use <em>admin/admin</em> to login.
-        </p>
-        <p>
-            The Sling client library tests are available at 
-            <a href="sling-test/sling/sling-test.html">sling-test/sling/sling-test.html</a>.
-        </p>
-        
-                               <h2>Examples</h2>
- 
-        <p>There is some example to explore the capabilities of <a href="http://code.google.com/p/livesense">liveSense</a> portal</p>
-        <ul>
-        	<li><a href="/samples/notes">org.liveSense.sample.gwt.Notes</a> - Source code available <a href="http://github.com/liveSense/org.liveSense.sample.gwt.Notes">here</a><p>This is a simple <a href="http://code.google.com/webtoolkit/">Google Web Toolkit</a> example that demonstrates the GWT web service calling.</li>
-        </ul>
-        
-        
-        
-        <h2>Creating content</h2>
-       
-
-<P>Until we have ready-to-test forms, you can create content with cURL, or you can create an HTML form that posts to the specified URL.</P> 
- 
-<P>To create a content node (nodes are a <A href="http://jackrabbit.apache.org/" class="external-link" rel="nofollow">JCR</A> concept, a unit of storage) with cURL, use:</P> 
-<DIV class="preformatted panel" style="border-width: 1px;"><DIV class="preformattedContent panelContent"> 
-<PRE>curl -F&quot;sling:resourceType=foo/bar&quot; -F&quot;title=some title&quot; http://admin:admin@localhost:8888/content/mynode
-</PRE> 
-</DIV></DIV> 
-<P>The resulting node can be seen at <A href="http://localhost:8888/content/mynode.html" class="external-link" rel="nofollow">http://localhost:8888/content/mynode.html</A>, or as json format under <A href="http://localhost:8888/content/mynode.json" class="external-link" rel="nofollow">http://localhost:8888/content/mynode.json</A>.</P> 
- 
-<DIV class="panelMacro"><TABLE class="tipMacro"><COLGROUP><COL width="24"><COL></COLGROUP><TR><TD valign="top"><IMG src="https://cwiki.apache.org/confluence/images/icons/emoticons/check.gif" width="16" height="16" align="absmiddle" alt="" border="0"></TD><TD><B>Monitoring requests</B><BR>Sling provides a simple tool (an OSGi console plugin) to monitor HTTP requests, which helps understand how things work internally. See the <A href="monitoring-requests.html" title="Monitoring Requests">Monitoring Requests</A> page for details.</TD></TR></TABLE></DIV> 
- 
-<H2>Render your content using server-side javascript (ESP)</H2> 
- 
-<P>Sling uses scripts or servlets to render and process content.</P> 
- 
-<P>Several scripting languages are available as additional Sling modules (packaged as OSGi <EM>bundles</EM> that can be installed via the Sling management console), but the launchpad currently only includes the ESP (server-side ECMAscript) and JSP (Java Server Pages) languages modules by default.</P> 
- 
-<P>To select a script, Sling uses the node's <EM>sling:resourceType</EM> property, if it is set.</P> 
- 
-<P>That is the case in our example, so the following script will be used by Sling to render the node in HTML, if the script is found at <EM>/apps/foo/bar/html.esp</EM> in the repository.</P> 
-<DIV class="code panel" style="border-width: 1px;"><DIV class="codeHeader panelHeader" style="border-bottom-width: 1px;"><B>html.esp</B></DIV><DIV class="codeContent panelContent"> 
-<PRE class="code-java"> 
-&lt;html&gt;   &lt;body&gt;     &lt;h1&gt;&lt;%= currentNode.title %&gt;&lt;/h1&gt;   &lt;/body&gt; &lt;/html&gt;
-</PRE> 
-</DIV></DIV> 
-<P>To select the script, Sling:</P> 
-<UL> 
-	<LI>looks under <EM>/apps</EM></LI> 
-	<LI>and appends the <EM>sling:resourceType</EM> value of our node ( which is <EM>foo/bar</EM> )</LI> 
-	<LI>and appends <EM>html.esp</EM>, as the extension of our URL is <EM>html</EM> and the language of our script is <EM>esp</EM>.</LI> 
-</UL> 
- 
- 
-<P>Store this script under <EM>apps/foo/bar/html.esp</EM>, either using a WebDAV client (connected to <A href="http://admin:admin@localhost:8888/" class="external-link" rel="nofollow">http://admin:admin@localhost:8888/</A>), or using cURL as shown here, after creating the <EM>html.esp</EM> script in the current directory on your system:</P> 
-<DIV class="preformatted panel" style="border-width: 1px;"><DIV class="preformattedContent panelContent"> 
-<PRE>curl -X MKCOL http://admin:admin@localhost:8888/apps/foo
-curl -X MKCOL http://admin:admin@localhost:8888/apps/foo/bar
-</PRE> 
-</DIV></DIV> 
-<P>create a local file <EM>html.esp</EM> and copy above content.</P> 
-<DIV class="preformatted panel" style="border-width: 1px;"><DIV class="preformattedContent panelContent"> 
-<PRE>curl -T html.esp http://admin:admin@localhost:8888/apps/foo/bar/html.esp
-</PRE> 
-</DIV></DIV> 
- 
-<P>The HTML rendering of your node, at <A href="http://localhost:8888/content/mynode.html" class="external-link" rel="nofollow">http://localhost:8888/content/mynode.html</A>, is now created by this ESP script. You should see the node's title alone as an &lt;h1&gt; element in that page.</P> 
- 
-<P>A script named <EM>POST.esp</EM> instead of <EM>html.esp</EM> would be called for a POST request, <EM>DELETE.esp</EM> for DELETE, <EM>xml.esp</EM> for a GET request with a <EM>.xml</EM> extension, etc. See <A href="http://cwiki.apache.org/SLING/url-to-script-resolution.html" class="external-link" rel="nofollow">URL to Script Resolution</A> on the Sling wiki for more info.</P> 
- 
-<P>Servlets can also be easily &quot;wired&quot; to handle specific resource types, extensions, etc., in the simplest case by using SCR annotations in the servlet source code. Servlets and scripts are interchangeable when it comes to processing Sling requests.</P> 
- 
-<H2>What next?</H2> 
- 
-<P>These simple examples show how Sling uses scripts to work with JCR data, based on <EM>sling:resourceType</EM> or node types.</P> 
- 
-<P>There's much more to Sling of course - you'll find some additional simple examples below, and above in the <EM>see also</EM> section.</P> 
- 
-<P>We are working on debugging features to help trace the way Sling processes requests. Have a look at <A href="https://issues.apache.org/jira/browse/SLING-3" class="external-link" rel="nofollow">SLING-3</A> to see what's possible already.</P> 
- 
-<H2>Let Sling generate the path of a newly created node.</H2> 
- 
-<P>To create a node with a unique path at a given location, end the URL of the POST request with <EM>/&#42;</EM>.</P> 
- 
-<P>In this case, the Sling response redirects to the URL of the created node.</P> 
- 
-<P>Start by creating a new <EM>/blog</EM> folder:</P> 
-<DIV class="preformatted panel" style="border-width: 1px;"><DIV class="preformattedContent panelContent"> 
-<PRE>curl -X POST &quot;http://admin:admin@localhost:8888/content/blog&quot;
-</PRE> 
-</DIV></DIV> 
-<P>And create a node with a Sling-generated name under it:</P> 
-<DIV class="preformatted panel" style="border-width: 1px;"><DIV class="preformattedContent panelContent"> 
-<PRE>curl -D - -F&quot;title=Adventures with Sling&quot; &quot;http://admin:admin@localhost:8888/content/blog/*&quot;
-</PRE> 
-</DIV></DIV> 
-<P>Using cURL's <EM>&#45;D</EM> option shows the full HTTP response, which includes a <EM>Location</EM> header to indicate where the new node was created:</P> 
-<DIV class="preformatted panel" style="border-width: 1px;"><DIV class="preformattedContent panelContent"> 
-<PRE>Location: http://localhost:8888/content/blog/adventures_with_slin_0
-</PRE> 
-</DIV></DIV> 
-<P>The actual node name might not be <EM>adventures_with_slin_0</EM> &#45; depending on existing content in your repository, Sling will find a unique name for this new node, based on several well-know property values like title, description, etc. which are used for this if provided.</P> 
- 
-<P>So, in our case, our new node can be displayed in HTML via the <A href="http://localhost:8888/content/blog/adventures_with_slin_0.html" class="external-link" rel="nofollow">http://localhost:8888/content/blog/adventures_with_slin_0.html</A> URL.</P> 
- 
-<P>Note that we didn't set a <EM>sling:resourceType</EM> property on our node, so if you want to render that node with a script, you'll have to store the script under <EM>/apps/nt/unstructured/html.esp</EM>.</P> 
- 
-<H2>Add a page header with sling.include</H2> 
- 
-<P>The <EM>sling.include</EM> function can be called from scripts to include the rendered result of another node.</P> 
- 
-<P>In this example, we create a node at <EM>/content/header</EM>, rendered with a logo using an <EM>html.esp</EM> script, then use that header at the top of the <EM>html.esp</EM> script that we created previously for the <EM>foo/bar</EM> resource type.</P> 
- 
-<P>Start by checking that <A href="http://localhost:8888/content/mynode.html" class="external-link" rel="nofollow">http://localhost:8888/content/mynode.html</A> is rendered using the <EM>html.esp</EM> script created above.</P> 
- 
-<P>Create this script and name it <EM>header.esp</EM>:</P> 
-<DIV class="code panel" style="border-width: 1px;"><DIV class="codeHeader panelHeader" style="border-bottom-width: 1px;"><B>header.esp</B></DIV><DIV class="codeContent panelContent"> 
-<PRE class="code-java"> 
-&lt;div&gt;   &lt;p style=<SPAN class="code-quote">&quot;color:blue;&quot;</SPAN>&gt;     &lt;img src=<SPAN class="code-quote">&quot;/images/sling.jpg&quot;</SPAN> align=<SPAN class="code-quote">&quot;right&quot;</SPAN>/&gt;     &lt;%= currentNode.headline %&gt;   &lt;/p&gt; &lt;/div&gt;
-</PRE> 
-</DIV></DIV> 
-<P>Upload it so that it is used to render resources having <EM>sling:resourceType=foo/header</EM>:</P> 
-<DIV class="preformatted panel" style="border-width: 1px;"><DIV class="preformattedContent panelContent"> 
-<PRE>curl -X MKCOL  http://admin:admin@localhost:8888/apps/foo/header/
-curl -T header.esp http://admin:admin@localhost:8888/apps/foo/header/html.esp
-</PRE> 
-</DIV></DIV> 
-<P>Create the header node:</P> 
-<DIV class="preformatted panel" style="border-width: 1px;"><DIV class="preformattedContent panelContent"> 
-<PRE>curl -F&quot;sling:resourceType=foo/header&quot; -F&quot;headline=Hello, Sling world&quot; http://admin:admin@localhost:8888/content/header
-</PRE> 
-</DIV></DIV> 
-<P>Upload the logo that the script uses (using sling.jpg or another logo in the current directory):</P> 
-<DIV class="preformatted panel" style="border-width: 1px;"><DIV class="preformattedContent panelContent"> 
-<PRE>curl -X MKCOL  http://admin:admin@localhost:8888/images/
-curl -T sling.jpg  http://admin:admin@localhost:8888/images/sling.jpg
-</PRE> 
-</DIV></DIV> 
-<P>And check that the header is rendered with the logo at <A href="http://localhost:8888/content/header.html" class="external-link" rel="nofollow">http://localhost:8888/content/header.html</A>.</P> 
- 
-<P>Now, update the html.esp script that we created for our first example above, to include the header:</P> 
-<DIV class="code panel" style="border-width: 1px;"><DIV class="codeHeader panelHeader" style="border-bottom-width: 1px;"><B>html.esp</B></DIV><DIV class="codeContent panelContent"> 
-<PRE class="code-java"> 
-&lt;html&gt;   &lt;body&gt;     &lt;div id=<SPAN class="code-quote">&quot;header&quot;</SPAN>&gt;       &lt;% sling.include(<SPAN class="code-quote">&quot;/content/header&quot;</SPAN>); %&gt;     &lt;/div&gt;     &lt;h1&gt;&lt;%= currentNode.title %&gt;&lt;/h1&gt;   &lt;/body&gt; &lt;/html&gt;
-</PRE> 
-</DIV></DIV> 
-<P>And upload it again to replace the previous version:</P> 
-<DIV class="preformatted panel" style="border-width: 1px;"><DIV class="preformattedContent panelContent"> 
-<PRE>curl -T html.esp http://admin:admin@localhost:8888/apps/foo/bar/html.esp
-</PRE> 
-</DIV></DIV> 
-<P>The <A href="http://localhost:8888/content/mynode.html" class="external-link" rel="nofollow">http://localhost:8888/content/mynode.html</A>, once refreshed, now shows the blue headline and logo, and this layout also applies to any node created with <EM>sling:resourceType=foo/bar</EM>.</P> 
-        
-        
-        
-
-    </div>
-  </body>
 </html>
