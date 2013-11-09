@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><features name="liveSense-${liveSense.version}-content-initial" xmlns="http://karaf.apache.org/xmlns/features/v1.0.0">
+	<feature name="liveSense-content-initial" version="${liveSense.content.initial.version}" description="liveSense content initial">
+        <feature>liveSense-core-base</feature>
+		<bundle>mvn:com.github.livesense/org.liveSense.content.initial/${liveSense.content.initial.version}</bundle>
+	</feature>
+</features>
