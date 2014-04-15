@@ -23,10 +23,11 @@
    <parent>
       <groupId>com.github.livesense</groupId>
       <artifactId>org.liveSense.parent</artifactId>
-      <version>2-SNAPSHOT</version>
-		<relativePath>..</relativePath>
+      <version>1.0.3</version>
+	  <relativePath>..</relativePath>
   </parent>
-	<scm>
+  <version>1.0.3-SNAPSHOT</version>
+    <scm>
 		<connection>scm:git:https://github.com/liveSense/org.liveSense.content.initial.git</connection>
 		<developerConnection>scm:git:https://github.com/liveSense/org.liveSense.content.initial.git</developerConnection>
 		<url>https://github.com/liveSense/org.liveSense.content.initial</url>
@@ -36,7 +37,6 @@
   <packaging>bundle</packaging>
 
   <name>liveSense :: JCR Initial content</name>
-  <version>1.0.2-SNAPSHOT</version>
   <description>
     liveSense Initial content. This bundle provides content that is loaded in the JCR repository by default for the liveSense portal
   </description>
